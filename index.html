@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link   rel="icon"  href="image/im3.png"    />
+        <meta http-equiv="UA-X-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Révision</title>
+        <script type="text/JavaScript" src="app.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <div class="dropdown">
+                <p><h1>Nos désignations les plus courants sont les suivants:</h1></p>
+                <!--<div class="dropdown-content">
+                    <span>Coucou :) </span>
+                </div>-->
+            </div>                
+            <ul>
+                <li>Apollo</li>
+                <li>Brioches</li>
+                <li>Bonbons</li>
+                <li>Coca cola</li>
+                <li>Cacapigeons</li>
+                <li>Chips</li>
+                <li>Eponges</li>
+                <li>Doritos</li>
+                <li>Fanta</li>
+                <li>Farilac</li>
+                <li>Frégo</li>
+                <li>Sédap</li>
+                <li>Socolait</li>
+                <li>Sablito</li>
+            </ul>
+        </div>
+        <form action="#" method="POST" id="formulaire">
+            <fieldset id="flds1">
+                <legend class="premiere"><h3>information sur le produit</h3></legend>
+                <table class="tableau1">
+                    <tr>
+                        <td><label for="des" class="pointer">Désignation :</label></td>
+                        <td class="transparent"><input class="box" type="text" id="des"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pu" class="pointer">Prix unitaire :</label></td>
+                        <td class="transparent"><input class="box" type="number" id="pu"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nbr" class="pointer">Nombres :</label></td>
+                        <td class="transparent"><input class="box" type="number" id="nbr"></td>
+                    </tr>
+                </table>
+                <div class="tooltip">
+                    <input type="submit" value="Valider" id="btn"> 
+                    <span class="tooltiptext">Le total des prix sera affiché dans le copmte rendue si vous n'entrez pas de désignation.</span>                   
+                </div>
+            </fieldset>
+            <fieldset id="flds2">
+                <legend class="deuxieme"><h3>compte rendue</h3></legend>
+                <table class="tableau2">
+                    <tr class="bold">
+                        <th class="tableau2">Désignation</th>
+                        <th class="tableau2">Prix Unitaire</th>
+                        <th class="tableau2">Nombres</th>
+                        <th class="tableau2">Sous-total</th>
+                    </tr>
+                    <tbody id="corps" class="tableau2"> </tbody>
+                    <tfoot id="pieds" class="tableau2"></tfoot>
+                </table>
+                
+            </fieldset>
+        </form>
+        
+        <!--<i class=""></i>
+            ../../../fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/fontawesome.min.css
+            <i class="fa fa-list-li" style="font-size: 20px;"></i>
+            <link rel="stylesheet" href="../../../w3school/w3school/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
+    </body>
+</html>
